@@ -60,6 +60,11 @@ return {
             'node_modules',
             '.git',
           },
+          mappings = {
+            n = {
+              ['dd'] = require('telescope.actions').delete_buffer,
+            }, -- n
+          },
         },
         extensions = {
           ['ui-select'] = {
